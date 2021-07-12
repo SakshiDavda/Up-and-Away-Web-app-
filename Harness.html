@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'/>
+    <title>RockClimbing Harness</title>
+    <!-- STYLES !-->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- FONTS !-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!-- JQUERY FILE !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS FILE !-->
+    <script src="script.js"></script>
+    <!-- RESOURCES & REFERENCES!
+      Photos:
+        Ruffwear: https://ruffwear.com/
+        Wuf Collar: https://getwuf.com/
+        Whistle: https://www.whistle.com/
+        National Geographic - Adventures outside with your dog: http://www.nationalgeographic.com/adventure/lists/photos-adventures-outside-with-your-dog/
+      Some copy (i.e. About and Individual Products)
+        Ruffwear: https://ruffwear.com/
+        Whistle: https://www.whistle.com/
+    -->
+  </head>
+  <body>
+    <header>
+        <!-- NAVIGATION !-->
+        <nav>
+            <ul>
+                <li><a href="index1.php"><img src="img/logo.jpg" alt="Up-and-Away-logo"/></a></li>
+            </ul>
+            <ul>
+                <li><a href="product-index.html">Products</a></li>
+                <li><a href="Adventures.html">Adventures</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="cart.html" class="cart">Cart</a></li>
+                <li><a href='logout.php'>Log Out</a></li>
+            </ul>
+        </nav>
+        <nav class="back-nav">
+            <a href="product-index.html"><h3>&lt;&lt; back to all products</h3></a>
+        </nav>
+    </header>
+    <section class="product-detail-panel">
+        <!-- PRODUCT IMAGES !-->
+        <div class="product-images">
+            <div class="display-image" style="background-image: url(img/Harness1.jpg)"></div>
+            
+        </div>
+        <!-- PRODUCT INFORMATION !-->
+        <div class="product-desc">
+            <h2>Harness</h2>
+            <h3>$100</h3>
+            <p>Adjustable leg loops for optimum fit and full flexibility<br>Longer leg loop bridge, Slide Block buckles<br>Small pouch on harness to accommodate RFID chip<br>Moveable foam waist padding allows the tie-in point and the four fixed gear loops to be centred and aligned<br>4 symmetrical, high-strength gear loops, 2 attachment options for ice screw clips, and a chalk bag loop</p>
+            <!-- PRODUCT FORM INPUTS !-->
+            <form id="product" data-name="Harness" data-price="100">
+                <select id="size" required>
+                    <option value="" disabled selected>Select size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <select id="color" required>
+                    <option value="" disabled selected>Select color</option>
+                    <option value="black" data-image="blackharness.jpg">Black</option>
+                    <option value="blue" data-image="Harness1.jpg">Blue</option>
+                    <option value="pink" data-image="pinkharness.jpg">Pink</option>
+                    <option value="green" data-image="greenharness.jpg">Green</option>
+                </select>
+                <input type="Submit" value="Add to Cart"/>
+            </form>
+            <a class="wishlist">Add to Wishlist </a>
+            <div class="product-images">
+            <ul class="thumbnails">
+                <li><a img= "Harness1.jpg" class="active" style="background-image: url(img/Harness1.jpg)"></a></li>
+                <li><a img="Harness2.jpg" style="background-image: url(img/Harness2.jpg)"></a></li>
+                <li><a img="Harness3.jpg" style="background-image: url(img/Harness3.jpg)"></a></li>
+                <li><a img="Harness4.jpg" style="background-image: url(img/Harness4.jpg)"></a></li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    <!-- RELATED PRODUCTS !-->
+    <section class="related-products-panel">
+        <a class="left-arrow" style="background-image: url(img/left-arrow.png)"></a>
+        <div>
+            <h3>Related Products</h3>
+            <div class="related-item">
+                <div style="background-image: url(img/Climbingshoes1.jpg)"></div>
+                <div class="product-desc">
+                    <h2>Climbing Shoes</h2>
+                    <h3>$110</h3>
+                    <h3><a href="Climbingshoes.html">View Product</a></h3>
+                </div>
+            </div>
+        </div>
+        <a class="right-arrow" style="background-image: url(img/right-arrow.png)"></a>
+    </section>
+    <!-- FOOTER !-->
+    <footer>
+        <ul>
+            <li><a href="#">Fit Guide</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>

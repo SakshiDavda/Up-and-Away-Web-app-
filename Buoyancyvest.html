@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Buoyancy Vest</title>
+    <!-- STYLES !-->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- FONTS !-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!-- JQUERY FILE !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS FILE !-->
+    <script src="script.js"></script>
+    <!-- RESOURCES & REFERENCES!
+      Photos:
+        Ruffwear: https://ruffwear.com/
+        Wuf Collar: https://getwuf.com/
+        Whistle: https://www.whistle.com/
+        National Geographic - Adventures outside with your dog: http://www.nationalgeographic.com/adventure/lists/photos-adventures-outside-with-your-dog/
+      Some copy (i.e. About and Individual Products)
+        Ruffwear: https://ruffwear.com/
+        Whistle: https://www.whistle.com/
+    -->
+  </head>
+  <body>
+    <header>
+        <!-- NAVIGATION !-->
+        <nav>
+            <ul>
+                <li><a href="index1.php"><img src="img/logo.jpg" alt="Up-and-Away-logo"/></a></li>
+            </ul>
+            <ul>
+                <li><a href="product-index.html">Products</a></li>
+                <li><a href="Adventures.html">Adventures</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="cart.html" class="cart">Cart</a></li>
+                <li><a href='logout.php'>Log Out</a></li>
+            </ul>
+        </nav>
+        <nav class="back-nav">
+            <a href="product-index.html"><h3>&lt;&lt; back to all products</h3></a>
+        </nav>
+    </header>
+    <section class="product-detail-panel">
+        <!-- PRODUCT IMAGES !-->
+        <div class="product-images">
+            <div class="display-image" style="background-image: url(img/Vest1.jpg)"></div>
+            
+        </div>
+        <!-- PRODUCT INFORMATION !-->
+        <div class="product-desc">
+            <h2>Buoyancy Vest</h2>
+            <h3>$40</h3>
+            <p>Buoyancy : Complies with EN ISO 12402-5 standard. Reinforced buoyancy of 70N. Crotch strap. <br>Robustness : Tear-resistant fabric. Three-buckle fastening.</p>
+            <!-- PRODUCT FORM INPUTS !-->
+            <form id="product" data-name="Buoyancy Vest" data-price="40">
+                <select id="size" required>
+                    <option value="" disabled selected>Select size</option>
+                    <option value="20-40 kg">20-40 kg</option>
+                    <option value="40-60 kg">40-60 kg</option>
+                    <option value="60-80 kg">60-80 kg</option>
+                    <option value="_SUP_80 kg">_SUP_80 kg</option>
+                </select>
+                <select id="color" required>
+                    <option value="" disabled selected>Select color</option>
+                    <option value="gray" data-image="Vest1.jpg">Gray</option>
+                    <option value="orange" data-image="Vest1.jpg">Orange</option>
+                </select>
+                <input type="Submit" value="Add to Cart"/>
+            </form>
+            <a class="wishlist">Add to Wishlist </a>
+            <div class="product-images">
+            <ul class="thumbnails">
+                <li><a img= "Vest1.jpg" class="active" style="background-image: url(img/Vest1.jpg)"></a></li>
+                <li><a img="Vest2.jpg" style="background-image: url(img/Vest2.jpg)"></a></li>
+                <li><a img="Vest3.jpg" style="background-image: url(img/Vest3.jpg)"></a></li>
+                <li><a img="Vest4.jpg" style="background-image: url(img/Vest4.jpg)"></a></li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    <!-- RELATED PRODUCTS !-->
+    <section class="related-products-panel">
+        <a class="left-arrow" style="background-image: url(img/left-arrow.png)"></a>
+        <div>
+            <h3>Related Products</h3>
+            <div class="related-item">
+                <div style="background-image: url(img/Lifejacket1.jpg)"></div>
+                <div class="product-desc">
+                    <h2>Life Jacket</h2>
+                    <h3>$40</h3>
+                    <h3><a href="Lifejacket.html">View Product</a></h3>
+                </div>
+            </div>
+        </div>
+        <a class="right-arrow" style="background-image: url(img/right-arrow.png)"></a>
+    </section>
+    <!-- FOOTER !-->
+    <footer>
+        <ul>
+            <li><a href="#">Fit Guide</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
